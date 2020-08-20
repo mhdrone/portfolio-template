@@ -1,0 +1,257 @@
+/* resume portfolio v0.0 - nomad */
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+/* universal styling */
+body {
+  color: #000000;
+  background-color: #f5f5f5;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+svg {
+  stroke: #000000;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  display: block;
+}
+ul {
+  text-decoration: none;
+  padding: 0px 0px 0px 40px;
+}
+a {
+  color: #0000FF;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+a:hover {
+  color: #0000aa;
+  background: none;
+  text-decoration: underline;
+}
+h1 { font-family: 'Montserrat', sans-serif; }
+h2 { font-family: 'Montserrat', sans-serif; }
+h3 { font-family: 'Montserrat', sans-serif; }
+h4 { font-family: 'Montserrat', sans-serif; }
+h5 { font-family: 'Montserrat', sans-serif; }
+h6 { font-family: 'Montserrat', sans-serif; }
+.base-paper {
+  position: relative;
+  background-color: #ffffff;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 2%;
+  padding: 3%;
+  padding-top: 1%;
+}
+
+/* top bar styling */
+.svg-text {
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  stroke-width: 0px;
+  fill: #000000;
+}
+.top-title-bar {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.top-title {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-column-gap: 0;
+  grid-template-columns: 9% 91%;
+}
+.logo-square {
+  position: relative;
+  top: 12.5%;
+  width: 100%;
+}
+.top-bar-list-container {
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+
+  text-align: center;
+  padding: 0.75%;
+  margin: 0px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+}
+
+
+/* main content styling */
+.content-box {
+  position: relative;
+  width: 100%;
+  
+  display: inline-grid;
+  grid-template-columns: 30% 70%;
+
+  text-align: left;
+  padding: 0px;
+  margin: 1%;
+}
+.section-title {
+  text-transform: capitalize;
+  padding-top: 2%;
+}
+.section-content {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.double-list-box {
+  position: relative;
+  width: 100%;
+  
+  display: inline-grid;
+  grid-template-columns: auto auto;
+
+  text-align: left;
+}
+
+
+/* list styling */
+.reg-list {
+  list-style-type: none;
+}
+.reg-list > li {
+  margin-bottom: 2%;
+}
+.no-bottom-marg > li {
+  margin-bottom: 0;
+}
+
+
+/* drop down styling */
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 10px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.project-title {
+  cursor: pointer;
+}
+.project-title::selection {
+  color: none;
+  background: none;
+}
+.project-title::-moz-selection {
+  color: none;
+  background: none;
+}
+.project-description {
+  display: none;
+  border-bottom: 3px solid #eeeeee;
+}
+.visible {
+  display: block;
+}
+
+
+/* unique styling */
+h1.name-title { margin-top: 0; margin-bottom: 5px; }
+h3.name-description { margin-top: 0; color: #646464; }
+
+
+/* resume download */
+.resume-link {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  margin-left: 40px;
+  padding: 9px;
+  border: 1px solid #0000FF;
+  border-radius: 3px;
+}
+.resume-link:hover {
+  color: #000000;
+  border-color: #000000;
+  background-color: #dddddd;
+  text-decoration: none;
+}
+
+
+/* phone and tablet settings */
+@media screen and (max-width: 1100px) {
+  .top-title {
+    grid-template-columns: 100px auto;
+  }
+  .base-paper {
+    margin-top: 0px;
+  }
+  .top-bar-list-container {
+    grid-template-columns: auto auto;
+    border-radius: 5px;
+  }
+  .top-bar-list-container > li {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .content-box {
+    grid-template-columns: auto;
+  }
+  .section-title {
+    border-bottom: solid #eeeeee;
+    border-width: 2px;
+  }
+  .resume-link {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-title {
+    grid-template-columns: 0% 100%;
+  }
+  .logo-square > svg {
+    display: none;
+  }
+  .base-paper {
+    margin-top: 0px;
+  }
+  .top-bar-list-container {
+    grid-template-columns: auto;
+  }
+  .top-bar-list-container > li {
+    width: 100%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    font-size: 115%;
+  }
+  .content-box {
+    grid-template-columns: auto;
+  }
+  .reg-list > li {
+    margin-bottom: 3%;
+  }
+  .no-bottom-marg > li {
+    margin-bottom: 0;
+    list-style-type: disc;
+  }
+  .project-title {
+    font-size: 115%;
+  }
+  .resume-link {
+    margin: none;
+    width: 80%;
+  }
+}

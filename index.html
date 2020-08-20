@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<!--
+  Resume-eportfolio template written by nomad
+
+  You may edit and redistrubute this. No warranty. I.e. the terms stated under
+  the MIT licence here https://www.mit.edu/~amini/LICENSE.md except I don't have
+  a copyright, I just wrote it.
+
+  To edit this template simply ctrl+f for `[ ]` there should be 12 matches not
+  including that one. Read the comment and make the changes it states to do and
+  either put an X inside the brackets (ie `[X]`) or a number to indicate how 
+  many times you've edited that field, so something else idc.
+
+  NOTE: if you want to set the tab icon, take the square (or close to square)
+        picture (png or jpg should work) and rename it to `favicon.ico` and
+        put it in the folder with this file.
+-->
+
+<html>
+  <head>
+
+    <!-- [ ] change the title here -->
+    <title>Tab Title Here</title>
+
+
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <script src="/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M. Hamilton Landes Jr. - Resume and Projects">
+    <meta name="author" content="M. Hamilton Landes Jr.">
+  </head>
+  <body>
+    <div class="base-paper">
+      
+      <div class="top-title">
+        <div class="logo-square">
+          <svg width="80px" viewBox="0 0 120 120" preserveAspectRatio="xMidYMid meet">
+            <path d="M0 0 L120 0 L120 120 L0 120 L0 0"></path>
+
+            <!--
+              [ ] first change the "IN" in the <text> tag to you initals then
+                  edit the x and y values and refresh the page to center them
+                  in the box.
+              -->
+            <text class="svg-text" x="27" y="82">IN</text>
+
+
+          </svg>
+        </div>
+        <div class="top-title-bar">
+
+          <!-- [ ] change your name and major here -->
+          <h1 class="name-title">Write your name here</h1>
+          <h3 class="name-description">[Your Major Here] Student - College of Engineering at Virginia Tech</h3>
+
+
+        </div>
+      </div>
+
+      <div class="top-bar">
+        <ul class="top-bar-list-container">
+
+          <!-- 
+            [ ] change you email, phone number, website, and linkedin below
+                there are two values per each link make sure you change both
+                the first sets the link location and the second is what it
+                actually says
+          -->
+          <li><a href="mailto:EMAILHERE">EMAILHERE</a></li>
+          <li><a href="tel:123-456-7890">(123) 456-7890</a></li>
+          <li><a href="https://THISWEBSITE.COM/">THISWEBSITE.COM</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/YOUR-PROFIE">linkedin.com/in/YOURPROFIE</a></li>
+
+
+        </ul>
+      </div>
+
+      
+      <div class="content-box">
+        <!-- ========= The start of page content (resume sections) ========= -->
+
+
+        <!--
+          [ ] resume area, you don't need to edit the title but make sure you
+              change the file name and put that file in the same folder as this
+              one.
+        -->
+        <div>
+          <h2 class="section-title resume-title">resume</h2>
+        </div>
+        <div class="section-content resume-content">
+          <a class="resume-link" href="/NAME_OF_YOUR_FILE.pdf">Download</a>
+        </div>
+
+
+        <!--
+          [ ] this is a regular list, it wont show bullet points on resize, it 
+              will add a space between each <li> (list item) and behaves like
+              normal html. Notice that <strong> and <b> have the same bold 
+              effect, and <br> indicates a new line, other html formatting also
+              will work here.
+
+              Note: all "section titles" auto capitalize the first letter, if
+                    you want to change that you will need to edit the style.css
+                    file
+        -->
+        <div>
+          <h2 class="section-title">Regular List</h2>
+        </div>
+        <div class="section-content">
+          <ul class="reg-list">
+            <li><strong>High School Diploma</strong> - Date Graduated<br>second line here</li>
+            <li><b>Your expected graduation cert</b> - Expected Graduation: DATE<br>School name, location</li>
+          </ul>
+        </div>
+
+
+        <!--
+          [ ] this is a two column list, it will show a bullet point in front of
+              each item on resize, it does not add a space under each li and reg
+              html formating works here as well. The first listed <ul> is the
+              first column and the second is the second column.
+        -->
+        <div>
+          <h2 class="section-title">two column list</h2>
+        </div>
+        <div class="section-content double-list-box">
+          <ul class="reg-list no-bottom-marg">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+          </ul>
+          <ul class="reg-list no-bottom-marg">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+
+
+        <!--
+          [ ] this is the same as a regular list but does not put a space under
+              each new item and will add bullet points on a smaller screen.
+        -->
+        <div>
+          <h2 class="section-title">List with no space under it</h2>
+        </div>
+        <div class="section-content">
+          <ul class="reg-list no-bottom-marg">
+            <li>abc</li>
+            <li>efg</li>
+            <li>hij</li>
+            <li>klm</li>
+            <li>nop</li>
+          </ul>
+        </div>
+
+        
+        <!--
+          [ ] this is the drop down menu section, a little more complicated. All
+              drop down menu items must be between the "drop down menu start"
+              and "drop down menu end" comments to be formatted correctly.
+        -->
+        <div>
+          <h2 class="section-title">drop down menu</h2>
+        </div>
+        <div class="section-content">
+          <ul class="reg-list project-list">
+            <!-- =============== drop down menu start =============== -->
+
+
+            <!-- 
+              [ ] this is a project entry, if you ctrl+f the term "basic-ele"
+                  you will see three uses of the term in the element below,
+                  this feilds can be change and have to be unique per each
+                  project entry (ie the stuff below) but must have the same
+                  (in spelling and caps) across all 3 fields. ie "basic-ele"
+                  is the identifier in this case. Notice that the <div>
+                  element right after the h4 has an id of "basic-ele-arrow"
+                  The -arrow must be present or the arrow will not rotate and
+                  the drop down will not work.
+            -->
+            <li>
+              <div class="project-title">
+                <h4 onclick="showButtonClick('basic-ele')">
+                  <div id="basic-ele-arrow" class="arrow arrow-right"></div>basic project element (title)</h4>
+              </div>
+              <div id="basic-ele" class="project-description"></div>
+            </li>
+
+
+            <!--
+              [ ] here is an example of how to add a description
+            -->
+            <li>
+              <div class="project-title"><h4 onclick="showButtonClick('project-1')"><div id="project-1-arrow" class="arrow arrow-right"></div>project 1</h4></div>
+              <div id="project-1" class="project-description">
+                <p>This is a project with a short description.</p>
+              </div>
+            </li>
+
+            <!--
+              [ ] here is an example with a long description
+            -->
+            <li>
+              <div class="project-title"><h4 onclick="showButtonClick('project-2')"><div id="project-2-arrow" class="arrow arrow-right"></div>project 2</h4></div>
+              <div id="project-2" class="project-description">
+                <p>This is project 1, this is an example description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor. In dictum non consectetur a erat nam. Viverra nibh cras pulvinar mattis nunc. Sed tempus urna et pharetra pharetra. Amet risus nullam eget felis eget nunc lobortis mattis aliquam. Nunc sed id semper risus. At elementum eu facilisis sed odio morbi quis commodo. Etiam non quam lacus suspendisse. Tortor vitae purus faucibus ornare suspendisse sed. Lectus nulla at volutpat diam ut. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Porta lorem mollis aliquam ut porttitor leo a diam. Etiam sit amet nisl purus. Faucibus pulvinar elementum integer enim neque volutpat ac. Erat nam at lectus urna duis convallis convallis tellus id.</p>
+                <h5>this is a breaker header</h5>
+                <p>this is some more text, Cras fermentum odio eu feugiat pretium nibh. Cursus vitae congue mauris rhoncus aenean vel elit. Varius duis at consectetur lorem donec massa sapien faucibus et. Libero nunc consequat interdum varius sit amet mattis vulputate. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Est ante in nibh mauris cursus. Id eu nisl nunc mi ipsum faucibus vitae. Suspendisse sed nisi lacus sed viverra tellus in. Odio tempor orci dapibus ultrices in iaculis nunc. Tincidunt dui ut ornare lectus sit amet est placerat in. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Amet mattis vulputate enim nulla aliquet porttitor lacus. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Pharetra vel turpis nunc eget lorem dolor. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget mauris. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Laoreet non curabitur gravida arcu.</p>
+              </div>
+            </li>
+
+
+            <!-- =============== drop down menu end =============== -->
+          </ul>
+        </div>
+        
+        
+        <!-- ============= resume section end ============= -->
+      </div>
+    </div>
+  </body>
+</html>
