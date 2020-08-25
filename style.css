@@ -187,6 +187,9 @@ h3.name-description { margin-top: 0; color: #646464; }
   background-color: #dddddd;
   text-decoration: none;
 }
+.resume-content {
+  margin: 1%;
+}
 
 
 /* phone and tablet settings */
