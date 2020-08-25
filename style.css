@@ -118,6 +118,9 @@ h6 { font-family: 'Montserrat', sans-serif; }
 
   text-align: left;
 }
+.double-list-box > .reg-list {
+  margin: 2%;
+}
 
 
 /* list styling */
