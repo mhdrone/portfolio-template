@@ -309,6 +309,7 @@ h3.name-description { margin-top: 0; color: #646464; }
     page-break-inside: avoid;
   }
   .project-list > li {
+    break-before: always;
     break-inside: avoid;
     page-break-inside: avoid;
   }
