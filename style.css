@@ -305,6 +305,7 @@ h3.name-description { margin-top: 0; color: #646464; }
     break-before: always;
   }
   .section-content {
+    break-before: always;
     break-inside: avoid;
     page-break-inside: avoid;
   }
