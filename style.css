@@ -94,7 +94,7 @@ h6 { font-family: 'Montserrat', sans-serif; }
   position: relative;
   width: 100%;
   
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 30% 70%;
 
   text-align: left;
@@ -268,6 +268,7 @@ h3.name-description { margin-top: 0; color: #646464; }
 @media print {
   body {
     font-size: 85%;
+    overflow: visible;
   }
   h1 { font-size: 100%; }
   h2 { font-size: 100%; }
@@ -293,6 +294,19 @@ h3.name-description { margin-top: 0; color: #646464; }
     border-width: 1px;
     border-color: #000000;
     font-size: 80%;
+  }
+  .resume-title {
+    display: none;
+  }
+  .resume-content {
+    display: none;
+  }
+  .section-title {
+    break-before: always;
+  }
+  .section-content {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
   .project-list > li {
     break-inside: avoid;
