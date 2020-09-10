@@ -33,7 +33,7 @@ svg {
 ul {
   text-decoration: none;
   list-style-type: circle;
-  list-style-position: inside;
+  list-style-position: outside;
   padding: 0px 0px 0px 40px;
   margin: 1%;
 }
