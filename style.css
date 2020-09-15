@@ -202,6 +202,22 @@ h6 {
   display: none;
   border-bottom: 3px solid var(--element-color-1);
 }
+.project-discription li {
+  list-style: disc;
+}
+li.disabled-project {
+  margin-left: 19px;
+  list-style: disc;
+}
+li.disabled-project div.arrow {
+  display: none;
+}
+li.disabled-project .project-title {
+  cursor: inherit;
+}
+li.disabled-project .visible {
+  display: none;
+}
 .visible {
   display: block;
 }

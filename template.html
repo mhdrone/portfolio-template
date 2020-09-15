@@ -193,6 +193,25 @@
                   The -arrow must be present or the arrow will not rotate and
                   the drop down will not work.
             -->
+
+
+            <!--
+              [ ] a disabled list (if you haven't written the discription but
+                  want the bullet point)
+                  all you need to do to set a project disabled is to set the
+                  li element's class to "disabled-project".
+            -->
+            <li class="disabled-project">
+              <div class="project-title">
+                <h4 onclick="showButtonClick('disabled-ele')">
+                  <div id="disabled-ele-arrow" class="arrow arrow-right"></div>disabled project element</h4>
+              </div>
+              <div id="disabled-ele" class="project-description"></div>
+            </li>
+
+            <!--
+              [ ] basic project element
+            -->
             <li>
               <div class="project-title">
                 <h4 onclick="showButtonClick('basic-ele')">
