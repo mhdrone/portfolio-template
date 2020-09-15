@@ -202,7 +202,7 @@ h6 {
   display: none;
   border-bottom: 3px solid var(--element-color-1);
 }
-.project-discription li {
+.project-description li {
   list-style: disc;
 }
 li.disabled-project {
