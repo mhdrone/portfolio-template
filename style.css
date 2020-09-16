@@ -30,14 +30,12 @@ svg {
   fill: none;
   display: block;
 }
-p, ul{
-  padding: 0px 0px 0px 40px;
-  margin: 1%;
-}
 ul {
   text-decoration: none;
   list-style-type: circle;
   list-style-position: outside;
+  padding: 0px 0px 0px 40px;
+  margin: 1%;
 }
 a {
   color: var(--main-link-color);
@@ -148,6 +146,10 @@ h6 {
 .section-content {
   padding-top: 2%;
   padding-bottom: 2%;
+}
+.section-content > p {
+  padding: 0px 0px 0px 40px;
+  margin: 1%;
 }
 .double-list-box {
   position: relative;
