@@ -130,7 +130,7 @@ h6 {
 /* main content styling */
 .content-box {
   position: relative;
-  width: 100%;
+  width: 98%;
   
   display: grid;
   grid-template-columns: 30% 70%;
